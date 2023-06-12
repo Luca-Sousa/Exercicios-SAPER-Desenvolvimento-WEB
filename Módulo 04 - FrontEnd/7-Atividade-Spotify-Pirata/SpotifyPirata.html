@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <style>
+
+        .col, [class*="col-"] {
+            border: 1px solid red;
+            min-height: 100px;
+            
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 220px;
+            height: 500px;
+            background-color: #000000;
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
+
+        .sidebar-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+
+        .sidebar-menu li {
+            padding: 7px;
+        }
+
+        .sidebar-menu li a {
+            text-decoration: none;
+            color: #f8f7f7; /* Cor do texto do menu */
+        }
+
+        .sidebar-menu li a i {
+            text-decoration: none;
+            margin-right: 10px;
+            color: gray; /* Cor do texto do menu */
+        }
+
+        .sidebar-menu li a:hover {
+            background-color: #ccc; /* Cor de fundo ao passar o mouse */
+        }
+
+        .sidebar-img {
+            top: 0;
+            left: 0;
+            width: 100%; /* Tamanho da imagem */
+            height: auto;
+            margin-bottom: auto;
+        }
+
+        .content {
+            flex: 1;
+            background-color: #121212;
+        }
+
+        .navbar {
+            background-color: #1E1345; /* Cor de fundo da navbar */
+            padding: 10px; /* Espaçamento interno da navbar */
+        }
+
+        .navbar-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar-menu li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .navbar-menu li button{
+            background-color: #1f1d1d; /* Define a cor de fundo transparente */
+            border: none; /* Remove a borda do botão */
+            padding: 0; /* Remove o preenchimento interno do botão */
+            width: 30px; /* Largura desejada do botão */
+            height: 30px; /* Altura desejada do botão */
+            background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o botão */
+            background-repeat: no-repeat; /* Evita a repetição da imagem */
+            background-position: center; /* Centraliza a imagem no botão */
+            cursor: pointer; /* Mostra o cursor de interação */
+            border-radius: 50%;
+        }
+
+        .navbar-menu li a {
+            text-decoration: none;
+            color: #fff; /* Cor do texto da navbar */
+        }
+
+    </style>
+
+</head>
+<body>
+    
+
+            <div class="container">
+                <div class="sidebar">
+                    <ul class="sidebar-menu">
+                        <li><a href="#"> <i class="bi bi-house-door"></i> Início</a></li>
+                        <li><a href="#"> <i class="bi bi-search"></i> Buscar</a></li>
+                        <li><a href="#"> <i class="bi bi-collection"></i> Sua Biblioteca</a></li>
+                        <li></li>
+                        <li><a href="#"> <i class="bi bi-plus-square-fill"></i> Criar Playlist</a></li>
+                        <li><a href="#"> <i class="bi bi-chat-left-heart-fill"></i> Músicas Curtidas</a></li>
+                        <li><a href="#"> <i class="bi bi-bookmark"></i> Seus Episódios</a></li>
+                    </ul>
+                    <img src="imagem-1.jpg" alt="" class="sidebar-img">
+                </div>
+                <div class="content">
+                    <nav class="navbar">
+                        <ul class="navbar-menu">
+                          <li><button><i class="bi bi-chevron-left" style="color: #fff;"></i></i></button></li>
+                          <li><button><i class="bi bi-chevron-right" style="color: #beb4b4;"></i></button></li>
+                          <li><a href="#">Página 3</a></li>
+                          <li><a href="#">Músicas Curtidas</a></li>
+                        </ul>
+                      </nav>
+
+
+                </div>
+              </div>
+
+
+</body>
+</html>
